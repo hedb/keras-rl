@@ -16,7 +16,7 @@ ENV_NAME = 'CartPole-v0'
 # Get the environment and extract the number of actions.
 env = gym.make(ENV_NAME)
 np.random.seed(123)
-env.seed(123)
+env.reset(seed=123)
 nb_actions = env.action_space.n
 
 # Next, we build a very simple model.
